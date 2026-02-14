@@ -35,8 +35,8 @@ body {
 
 /* Header Styles */
 .dark-header {
-  background: var(--bg-primary);
-  border-bottom: 1px solid var(--border-subtle);
+  background: #4A90E2;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   padding: 16px 7.6923%;
   position: fixed;
   top: 0;
@@ -47,9 +47,9 @@ body {
 }
 
 .dark-header.header-scrolled {
-  background: rgba(0, 0, 0, 0.95);
+  background: rgba(74, 144, 226, 0.95);
   backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--border-medium);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .header-content {
@@ -98,7 +98,7 @@ body {
 }
 
 .dark-nav-link {
-  color: var(--text-muted);
+  color: rgba(255, 255, 255, 0.9);
   text-decoration: none;
   font-size: 18px;
   font-weight: 400;
@@ -106,11 +106,12 @@ body {
 }
 
 .dark-nav-link:hover {
-  color: var(--text-primary);
+  color: #FFFFFF;
 }
 
 .dark-nav-link.active {
-  color: var(--brand-active);
+  color: #FFFFFF;
+  font-weight: 600;
 }
 
 .mobile-menu-btn {
