@@ -21,8 +21,11 @@ const Footer = () => {
         <div className="footer-grid">
           <div className="footer-column">
             <div className="footer-logo">
-              <span className="footer-logo-text">SEAWORKS</span>
-              <span className="footer-logo-subtext">NIGERIA LIMITED</span>
+              <img 
+                src="https://customer-assets.emergentagent.com/job_offshore-support/artifacts/6yb1tekq_logo.jpg" 
+                alt="Seaworks Nigeria Limited"
+                className="footer-logo-image"
+              />
             </div>
             <p className="footer-description">
               Delivering excellence in marine, energy, and engineering services to Nigeria's oil & gas sector since 2003.

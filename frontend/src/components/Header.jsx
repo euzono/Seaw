@@ -39,10 +39,11 @@ const Header = () => {
     <header className={`dark-header ${isScrolled ? 'header-scrolled' : ''}`}>
       <div className="header-content">
         <Link to="/" className="logo-link">
-          <div className="logo-container">
-            <span className="logo-text">SEAWORKS</span>
-            <span className="logo-subtext">NIGERIA LIMITED</span>
-          </div>
+          <img 
+            src="https://customer-assets.emergentagent.com/job_offshore-support/artifacts/6yb1tekq_logo.jpg" 
+            alt="Seaworks Nigeria Limited"
+            className="header-logo"
+          />
         </Link>
 
         <nav className="dark-nav desktop-nav">
