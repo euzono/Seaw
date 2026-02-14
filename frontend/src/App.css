@@ -691,7 +691,7 @@ body {
 }
 
 .news-card:hover {
-  border-color: var(--brand-primary);
+  border-color: var(--brand-green);
   transform: translateY(-4px);
 }
 
@@ -729,7 +729,7 @@ body {
 .news-read-more {
   background: none;
   border: none;
-  color: var(--brand-primary);
+  color: var(--brand-blue);
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
@@ -741,6 +741,7 @@ body {
 
 .news-read-more:hover {
   gap: 12px;
+  color: var(--brand-red);
 }
 
 /* Contact Section */
@@ -782,7 +783,7 @@ body {
 }
 
 .contact-icon {
-  color: var(--brand-primary);
+  color: var(--brand-green);
   flex-shrink: 0;
   margin-top: 2px;
 }
@@ -835,7 +836,7 @@ body {
 .form-input:focus,
 .form-textarea:focus {
   outline: none;
-  border-color: var(--brand-primary);
+  border-color: var(--brand-blue);
 }
 
 .form-textarea {
@@ -873,23 +874,26 @@ body {
 }
 
 .footer-logo {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
   margin-bottom: 20px;
+}
+
+.footer-logo-image {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
 }
 
 .footer-logo-text {
   font-size: 24px;
   font-weight: 600;
-  color: var(--brand-primary);
+  color: var(--brand-blue);
   letter-spacing: 2px;
 }
 
 .footer-logo-subtext {
   font-size: 10px;
   font-weight: 400;
-  color: var(--text-secondary);
+  color: var(--brand-green);
   letter-spacing: 3px;
 }
 
