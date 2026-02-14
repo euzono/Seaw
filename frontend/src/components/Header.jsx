@@ -21,10 +21,14 @@ const Header = () => {
     { name: 'Services', path: '#services' },
     { name: 'Projects', path: '#projects' },
     { name: 'News', path: '#news' },
-    { name: 'Contact', path: '#contact' }
+    { name: 'Contact', path: '#contact' },
+    { name: 'Mail', path: 'https://seaworksng.com/webmail', external: true }
   ];
 
-  const scrollToSection = (e, path) => {
+  const scrollToSection = (e, path, external) => {
+    if (external) {
+      return; // Let the default link behavior handle external links
+    }
     if (path.startsWith('#')) {
       e.preventDefault();
       const element = document.querySelector(path);
@@ -51,8 +55,10 @@ const Header = () => {
             <a
               key={link.name}
               href={link.path}
-              onClick={(e) => scrollToSection(e, link.path)}
+              onClick={(e) => scrollToSection(e, link.path, link.external)}
               className={`dark-nav-link ${location.pathname === link.path ? 'active' : ''}`}
+              target={link.external ? '_blank' : undefined}
+              rel={link.external ? 'noopener noreferrer' : undefined}
             >
               {link.name}
             </a>
@@ -74,8 +80,10 @@ const Header = () => {
             <a
               key={link.name}
               href={link.path}
-              onClick={(e) => scrollToSection(e, link.path)}
+              onClick={(e) => scrollToSection(e, link.path, link.external)}
               className="mobile-nav-link"
+              target={link.external ? '_blank' : undefined}
+              rel={link.external ? 'noopener noreferrer' : undefined}
             >
               {link.name}
             </a>
