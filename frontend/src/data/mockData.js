@@ -20,8 +20,8 @@ export const services = [
   {
     id: 3,
     title: "Engineering Services",
-    description: "Fabrication, installation, maintenance, and technical support for oil & gas infrastructure.",
-    fullDescription: "",
+    description: "Engineering strength that powers progress. We deliver end-to-end fabrication, installation, maintenance, and technical support solutions for oil & gas infrastructure—built for durability, efficiency, and peak performance.",
+    fullDescription: "From concept to commissioning and ongoing support, our expert team ensures precision execution, strict safety compliance, and minimal downtime. We don't just build and maintain assets—we enhance reliability, extend lifecycle value, and keep your operations operating at full potential.",
     icon: "Wrench",
     image: "https://images.unsplash.com/photo-1641893823219-38b433f736c0"
   }
