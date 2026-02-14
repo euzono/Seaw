@@ -651,7 +651,7 @@ body {
 .clients-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 40px;
+  gap: 30px;
 }
 
 .client-card {

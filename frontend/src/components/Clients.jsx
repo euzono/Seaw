@@ -21,6 +21,41 @@ const Clients = () => {
     { 
       name: 'West African Gas Pipeline Company', 
       logo: 'https://customer-assets.emergentagent.com/job_offshore-support/artifacts/m7yj2g8p_logo5.jpg'
+    },
+    { 
+      name: 'Shell Petroleum', 
+      text: 'SHELL PETROLEUM',
+      isPlaceholder: true
+    },
+    { 
+      name: 'Chevron Nigeria', 
+      text: 'CHEVRON NIGERIA',
+      isPlaceholder: true
+    },
+    { 
+      name: 'Total Energies', 
+      text: 'TOTAL ENERGIES',
+      isPlaceholder: true
+    },
+    { 
+      name: 'Agip Oil Company', 
+      text: 'AGIP OIL COMPANY',
+      isPlaceholder: true
+    },
+    { 
+      name: 'Oando PLC', 
+      text: 'OANDO PLC',
+      isPlaceholder: true
+    },
+    { 
+      name: 'Seplat Energy', 
+      text: 'SEPLAT ENERGY',
+      isPlaceholder: true
+    },
+    { 
+      name: 'First E&P', 
+      text: 'FIRST E&P',
+      isPlaceholder: true
     }
   ];
 
@@ -37,11 +72,15 @@ const Clients = () => {
         <div className="clients-grid">
           {clients.map((client) => (
             <div key={client.name} className="client-card">
-              <img 
-                src={client.logo} 
-                alt={client.name}
-                className="client-logo-image"
-              />
+              {client.isPlaceholder ? (
+                <span className="client-name">{client.text}</span>
+              ) : (
+                <img 
+                  src={client.logo} 
+                  alt={client.name}
+                  className="client-logo-image"
+                />
+              )}
             </div>
           ))}
         </div>
