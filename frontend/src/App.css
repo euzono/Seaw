@@ -499,8 +499,8 @@ body {
   position: absolute;
   top: 20px;
   right: 20px;
-  background: var(--brand-primary);
-  color: #000000;
+  background: var(--brand-red);
+  color: #FFFFFF;
   padding: 8px 16px;
   font-size: 14px;
   font-weight: 600;
@@ -542,9 +542,9 @@ body {
 }
 
 .carousel-btn:hover {
-  background: var(--brand-primary);
-  color: #000000;
-  border-color: var(--brand-primary);
+  background: var(--brand-blue);
+  color: #FFFFFF;
+  border-color: var(--brand-blue);
 }
 
 .carousel-btn-prev {
@@ -573,7 +573,7 @@ body {
 }
 
 .indicator.active {
-  background: var(--brand-primary);
+  background: var(--brand-blue);
   width: 32px;
   border-radius: 6px;
 }
@@ -598,7 +598,7 @@ body {
 }
 
 .why-choose-card:hover {
-  border-color: var(--brand-primary);
+  border-color: var(--brand-blue);
   transform: translateY(-4px);
 }
 
@@ -608,12 +608,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--brand-hover);
+  background: rgba(0, 82, 165, 0.15);
   margin-bottom: 24px;
 }
 
 .why-icon {
-  color: var(--brand-primary);
+  color: var(--brand-blue);
 }
 
 .why-title {
@@ -656,7 +656,7 @@ body {
 }
 
 .client-card:hover {
-  border-color: var(--brand-primary);
+  border-color: var(--brand-blue);
 }
 
 .client-name {
