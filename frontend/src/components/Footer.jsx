@@ -71,7 +71,7 @@ const Footer = () => {
             <ul className="footer-contact">
               <li>
                 <MapPin size={16} />
-                <span>Victoria Island, Lagos, Nigeria</span>
+                <span>10A Shell Pipeline Rd, Rumuogba Estate, Rivers 503101, Nigeria</span>
               </li>
               <li>
                 <Phone size={16} />
