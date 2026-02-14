@@ -2,11 +2,26 @@ import React from 'react';
 
 const Clients = () => {
   const clients = [
-    { name: 'Chevron', text: 'CHEVRON' },
-    { name: 'Shell', text: 'SHELL' },
-    { name: 'ExxonMobil', text: 'EXXONMOBIL' },
-    { name: 'TotalEnergies', text: 'TOTALENERGIES' },
-    { name: 'Saipem', text: 'SAIPEM' }
+    { 
+      name: 'ExxonMobil', 
+      logo: 'https://customer-assets.emergentagent.com/job_offshore-support/artifacts/7n1l1563_logo1.jpg'
+    },
+    { 
+      name: 'Addax Petroleum', 
+      logo: 'https://customer-assets.emergentagent.com/job_offshore-support/artifacts/32pbh86f_logo2.jpg'
+    },
+    { 
+      name: 'NPDC', 
+      logo: 'https://customer-assets.emergentagent.com/job_offshore-support/artifacts/dbfvvv1s_logo3.jpg'
+    },
+    { 
+      name: 'NESOIL PLC', 
+      logo: 'https://customer-assets.emergentagent.com/job_offshore-support/artifacts/tq4i9743_logo4.jpg'
+    },
+    { 
+      name: 'West African Gas Pipeline Company', 
+      logo: 'https://customer-assets.emergentagent.com/job_offshore-support/artifacts/m7yj2g8p_logo5.jpg'
+    }
   ];
 
   return (
@@ -22,7 +37,11 @@ const Clients = () => {
         <div className="clients-grid">
           {clients.map((client) => (
             <div key={client.name} className="client-card">
-              <span className="client-name">{client.text}</span>
+              <img 
+                src={client.logo} 
+                alt={client.name}
+                className="client-logo-image"
+              />
             </div>
           ))}
         </div>

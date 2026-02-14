@@ -649,16 +649,37 @@ body {
 .client-card {
   background: var(--bg-secondary);
   border: 1px solid var(--border-subtle);
-  height: 120px;
+  height: 140px;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 24px;
   transition: all 0.3s ease;
+  overflow: hidden;
 }
 
 .client-card:hover {
   border-color: var(--brand-blue);
+  background: rgba(0, 82, 165, 0.05);
+  transform: translateY(-4px);
+  box-shadow: 0 4px 20px rgba(0, 82, 165, 0.2);
+}
+
+.client-logo-image {
+  max-width: 100%;
+  max-height: 90px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  filter: grayscale(100%) brightness(1.2);
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.client-card:hover .client-logo-image {
+  filter: grayscale(0%) brightness(1);
+  opacity: 1;
+  transform: scale(1.05);
 }
 
 .client-name {
