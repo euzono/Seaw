@@ -108,7 +108,7 @@ export const newsArticles = [
 ];
 
 export const contactInfo = {
-  address: "Plot 123, Marine Drive, Victoria Island, Lagos, Nigeria",
+  address: "10A Shell Pipeline Rd, Rumuogba Estate, Rivers 503101, Nigeria",
   phone: "+234 1 234 5678",
   email: "info@seaworksng.com",
   hours: "Mon - Fri: 8:00 AM - 5:00 PM"
