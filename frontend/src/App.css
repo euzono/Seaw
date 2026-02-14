@@ -777,6 +777,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 32px;
+  margin-bottom: 40px;
 }
 
 .contact-detail-item {
@@ -802,6 +803,18 @@ body {
   font-weight: 400;
   color: var(--text-primary);
   line-height: 1.5;
+}
+
+.map-container {
+  width: 100%;
+  margin-top: 32px;
+  border: 1px solid var(--border-subtle);
+  border-radius: 0px;
+  overflow: hidden;
+}
+
+.map-container iframe {
+  display: block;
 }
 
 /* Contact Form */
