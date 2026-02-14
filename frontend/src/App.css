@@ -65,6 +65,12 @@ body {
   text-decoration: none;
 }
 
+.header-logo {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+}
+
 .logo-container {
   display: flex;
   flex-direction: column;
@@ -74,14 +80,14 @@ body {
 .logo-text {
   font-size: 24px;
   font-weight: 600;
-  color: var(--brand-primary);
+  color: var(--brand-blue);
   letter-spacing: 2px;
 }
 
 .logo-subtext {
   font-size: 10px;
   font-weight: 400;
-  color: var(--text-secondary);
+  color: var(--brand-green);
   letter-spacing: 3px;
 }
 
@@ -194,38 +200,7 @@ body {
 
 /* Buttons */
 .btn-primary {
-  background: var(--brand-primary);
-  color: #000000;
-  border: none;
-  border-radius: 0px;
-  padding: 14px 24px;
-  font-size: 18px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: all 0.4s ease-in-out;
-  min-height: 56px;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  line-height: 1.2;
-  letter-spacing: 0;
-}
-
-.btn-primary:hover {
-  background: var(--brand-hover);
-  color: var(--brand-primary);
-  transform: scale(1.02);
-}
-
-.btn-primary:active {
-  background: var(--brand-active);
-  transform: scale(0.98);
-}
-
-.btn-secondary {
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--brand-blue);
   color: #FFFFFF;
   border: none;
   border-radius: 0px;
@@ -244,13 +219,45 @@ body {
   letter-spacing: 0;
 }
 
+.btn-primary:hover {
+  background: var(--brand-active);
+  transform: scale(1.02);
+  box-shadow: 0 4px 20px rgba(0, 82, 165, 0.4);
+}
+
+.btn-primary:active {
+  background: #002952;
+  transform: scale(0.98);
+}
+
+.btn-secondary {
+  background: rgba(0, 82, 165, 0.15);
+  color: #FFFFFF;
+  border: 2px solid var(--brand-blue);
+  border-radius: 0px;
+  padding: 14px 24px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  min-height: 56px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  line-height: 1.2;
+  letter-spacing: 0;
+}
+
 .btn-secondary:hover {
-  background: #FFFFFF;
-  color: #000000;
+  background: var(--brand-blue);
+  color: #FFFFFF;
+  border-color: var(--brand-blue);
 }
 
 .btn-secondary:active {
-  background: #F0F0F0;
+  background: var(--brand-active);
   transform: scale(0.98);
 }
 
@@ -316,7 +323,7 @@ body {
 }
 
 .stat-icon {
-  color: var(--brand-primary);
+  color: var(--brand-red);
   flex-shrink: 0;
 }
 
@@ -412,12 +419,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--brand-hover);
+  background: rgba(0, 82, 165, 0.15);
   margin-bottom: 20px;
 }
 
 .service-icon {
-  color: var(--brand-primary);
+  color: var(--brand-blue);
 }
 
 .service-title {
