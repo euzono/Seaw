@@ -38,6 +38,9 @@ const Services = () => {
                   </div>
                   <h3 className="service-title">{service.title}</h3>
                   <p className="service-description">{service.description}</p>
+                  {service.fullDescription && (
+                    <p className="service-full-description">{service.fullDescription}</p>
+                  )}
                 </div>
               </div>
             );

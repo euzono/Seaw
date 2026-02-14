@@ -433,14 +433,22 @@ body {
   font-size: 24px;
   font-weight: 600;
   color: var(--text-primary);
-  margin-bottom: 12px;
+  margin-bottom: 16px;
 }
 
 .service-description {
   font-size: 16px;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.6;
   color: var(--text-secondary);
+  margin-bottom: 12px;
+}
+
+.service-full-description {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--text-muted);
 }
 
 /* Projects Section */

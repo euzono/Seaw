@@ -4,14 +4,16 @@ export const services = [
   {
     id: 1,
     title: "Energy Services",
-    description: "Supply of Automotive Gas Oil (AGO) for offshore and onshore operations.",
+    description: "Powering performance where it matters most. We deliver premium Automotive Gas Oil (AGO) for offshore and onshore operations—ensuring reliable supply, rapid response, and seamless logistics that keep your projects moving without interruption.",
+    fullDescription: "With a strong distribution network and uncompromising quality standards, we provide the fuel your operations depend on—on time, every time—so you can focus on driving results, maximizing uptime, and staying ahead of the competition.",
     icon: "Fuel",
     image: "https://images.unsplash.com/photo-1768128834332-7d3479c8d634"
   },
   {
     id: 2,
     title: "Marine Services",
-    description: "Vessel chartering, offshore logistics, crew transport, and marine equipment support.",
+    description: "Delivering excellence across every nautical mile. Our vessel chartering, offshore logistics, crew transport, and marine equipment support solutions are designed to keep your offshore operations running smoothly, safely, and on schedule.",
+    fullDescription: "With a modern fleet, experienced crews, and a commitment to operational precision, we provide dependable marine support that minimizes downtime, optimizes performance, and ensures your projects stay on course—from port to platform and beyond.",
     icon: "Ship",
     image: "https://images.unsplash.com/photo-1618589166766-93188eeea911"
   },
@@ -19,6 +21,7 @@ export const services = [
     id: 3,
     title: "Engineering Services",
     description: "Fabrication, installation, maintenance, and technical support for oil & gas infrastructure.",
+    fullDescription: "",
     icon: "Wrench",
     image: "https://images.unsplash.com/photo-1641893823219-38b433f736c0"
   }
